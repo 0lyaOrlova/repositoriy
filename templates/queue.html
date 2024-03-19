@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+      <h1> Who in ocheredi?</h1>
+      {% set user_list = ["Vanya", "Petya", "Sanya", "Kirill"]  %}
+      <ul>
+        {% for user in user_list %}
+       <li>{{ loop.index }} - {{ user }} {% if loop.first %} first in ocheredi {% endif %}</li>
+        {% endfor %}
+      </ul>
+</body>
+</html>
